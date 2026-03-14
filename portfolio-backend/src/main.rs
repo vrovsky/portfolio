@@ -18,7 +18,13 @@ async fn main() {
         .route("/projects", axum::routing::get(routes::get_projects))
         .layer(cors);
     
-    let addr = SocketAddr::from(([0, 0, 0, 0], 3001));
+    let port: u16 = std::env::var("PORT")
+        .unwrap_or_else(|_| "3001".to_string())
+        .parse()
+        .unwrap_or(3001);
+    
+    let addr = SocketAddr::from(([0, 0, 0, 0], port));
     let listener = TcpListener::bind(addr).await.unwrap();
     axum::serve(listener, app).await.unwrap();
 }
+

@@ -1,9 +1,9 @@
-import adapter from '@sveltejs/adapter-netlify';
+import adapter from '@sveltejs/adapter-vercel';
 
 const config = {
 	kit: {
 		adapter: adapter({
-			split: true
+			strict: true
 		})
 	},
 	vitePlugin: {

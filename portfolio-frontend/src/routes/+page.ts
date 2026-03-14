@@ -2,8 +2,7 @@ import type { PageLoad } from './$types';
 import type { Project } from '$lib/types';
 import projectsData from '$lib/data/projects.json';
 
-// When deployed, set PUBLIC_API_URL
-const API_URL = 'http://localhost:3001';
+const API_URL = import.meta.env.PUBLIC_API_URL || 'http://localhost:3001';
 
 export const load: PageLoad = async ({ fetch }) => {
 	try {

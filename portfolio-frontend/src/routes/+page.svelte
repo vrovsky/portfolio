@@ -87,11 +87,19 @@
 				<div class="flex flex-col items-center justify-center gap-4 opacity-80 hover:opacity-100">
 					<h4 class="text-xl">Pick a Color</h4>
 					{#if ruined}
-						<button
-							onclick={resetColor}
-							class="rounded-sm bg-red-500 px-2 py-2 text-white opacity-80 transition-all hover:bg-red-600 hover:opacity-100"
-							>Reset</button
-						>
+						<div class="flex gap-4">
+							<input
+								type="color"
+								bind:value={selectedColor}
+								onchange={(e) => changeColor(e.currentTarget.value)}
+								class="h-12 w-12 cursor-pointer rounded-md border-none opacity-80 hover:opacity-100"
+							/>
+							<button
+								onclick={resetColor}
+								class="rounded-sm bg-red-500 p-2 text-white opacity-80 transition-all hover:bg-red-600 hover:opacity-100"
+								>Reset</button
+							>
+						</div>
 					{:else}
 						<input
 							type="color"

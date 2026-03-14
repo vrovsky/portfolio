@@ -15,7 +15,7 @@
 		{/each}
 	</div>
 	<div class="min-h-16 flex-1 lg:min-h-20">
-		<p class="text-sm lg:text-base">{project.description}</p>
+		<p class="text-sm whitespace-pre-line lg:text-base">{project.description}</p>
 		<div class="mt-4 flex space-x-4">
 			{#if project.github}
 				<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->

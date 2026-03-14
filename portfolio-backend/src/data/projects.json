@@ -1,7 +1,7 @@
 [
 	{
 		"name": "World.Inc",
-		"description": "Led engineering team of frontend and smart-contract developers, establishing architecture standards and development processes. Architected scalable frontend infrastructure to handle real-time market data streams, improving system responsiveness for high-volume trading environments. Implemented core trading features including one-click trading, real-time chart updates, and high-frequency UI interactions of the centralized exchange platform.",
+		"description": "Led a frontend and smart-contract engineering team. Established architecture standards and development processes.\n\nArchitected scalable frontend infrastructure to handle real-time market data streams for high-volume trading environments.\n\nImplemented core trading features: one-click trading, real-time chart updates, and high-frequency UI interactions for a centralized exchange platform.",
 		"github": "https://github.com/World-Markets-Inc/client",
 		"live": "https://docs.world.inc/",
 		"tech": ["TypeScript", "Rust", "MegaETH", "Frontend Architecture", "Team Leadership"],
@@ -9,7 +9,7 @@
 	},
 	{
 		"name": "EVAA Protocol",
-		"description": "Engineered MVP for a TON blockchain-based lending protocol, incorporating Rust-based smart contracts for cross-chain operations with Solana. Optimized frontend and backend performance, reducing application load times by 63% through targeted code refactoring. Delivered DeFi platform features under tight deadlines during rapid development cycles and hackathon competitions.",
+		"description": "Built MVP for a TON blockchain-based lending protocol with Rust smart contracts for cross-chain operations with Solana.\n\nOptimized frontend and backend performance, reducing application load times by 63% through targeted code refactoring.\n\nDelivered DeFi platform features under tight deadlines during rapid development cycles and hackathon competitions.",
 		"github": "https://github.com/evaafi",
 		"live": "https://app.evaa.finance/",
 		"tech": ["Rust", "TON Blockchain", "Solana", "TypeScript", "DeFi", "FunC"],
@@ -17,7 +17,7 @@
 	},
 	{
 		"name": "Supa Doge",
-		"description": "Developed smart contracts on NEAR blockchain, integrating with gaming backend systems to support interactive features. Built Solidity contracts for Ethereum interoperability, enabling cross-platform functionality. Independently designed and launched production-ready MVP frontend within three weeks.",
+		"description": "Developed smart contracts on NEAR blockchain, integrating with gaming backend systems for interactive features.\n\nBuilt Solidity contracts for Ethereum interoperability, enabling cross-platform functionality.\n\nIndependently designed and launched a production-ready MVP frontend within three weeks.",
 		"live": "https://supadoge.com/",
 		"tech": ["Rust", "Solidity", "Etherium", "NEAR", "NextJS", "TypeScript"],
 		"category": "professional"

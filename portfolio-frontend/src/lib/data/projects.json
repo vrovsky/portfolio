@@ -1,0 +1,88 @@
+[
+	{
+		"name": "World.inc",
+		"description": "Led engineering team of frontend and smart-contract developers, establishing architecture standards and development processes. Architected scalable frontend infrastructure to handle real-time market data streams, improving system responsiveness for high-volume trading environments. Implemented core trading features including one-click trading, real-time chart updates, and high-frequency UI interactions on a centralized exchange platform.",
+		"github": "https://world.inc/",
+		"live": "https://docs.world.inc/",
+		"tech": ["Rust", "TypeScript", "Solana", "Frontend Architecture", "Team Leadership"],
+		"category": "professional"
+	},
+	{
+		"name": "EVAA Protocol",
+		"description": "Engineered MVP for a TON blockchain-based lending protocol, incorporating Rust-based smart contracts for cross-chain operations with Solana. Optimized frontend and backend performance, reducing application load times by 63% through targeted code refactoring. Delivered DeFi platform features under tight deadlines during rapid development cycles and hackathon competitions.",
+		"github": "https://evaa.finance/",
+		"live": "https://app.evaa.finance/",
+		"tech": ["Rust", "TON Blockchain", "Solana", "TypeScript", "DeFi"],
+		"category": "professional"
+	},
+	{
+		"name": "Supa Doge",
+		"description": "Developed smart contracts on NEAR blockchain, integrating with gaming backend systems to support interactive features. Built Solidity contracts for Ethereum interoperability, enabling cross-platform functionality. Independently designed and launched production-ready MVP frontend within three weeks.",
+		"github": "https://supadoge.com/",
+		"tech": ["Solidity", "NEAR Blockchain", "ReactJS", "Ethereum"],
+		"category": "professional"
+	},
+	{
+		"name": "NRBoom",
+		"description": "Built backend system to process neuroheadset signal data using high-load scoring algorithms, ensuring reliable real-time analysis. Designed APIs that reduced AI team development time by approximately 20%, streamlining integration and collaboration across teams.",
+		"github": "https://nrboom.com/",
+		"tech": ["TypeScript", "Node.js", "Real-time Data Processing", "API Design"],
+		"category": "professional"
+	},
+	{
+		"name": "Free-Scribe",
+		"description": "AI-powered tool to transcribe and translate audio recordings using React and transformer models to automate multilingual content processing.",
+		"github": "https://github.com/vrovsky/free-scribe",
+		"live": "https://freescriber.netlify.app/",
+		"tech": ["ReactJS", "TailwindCSS", "Xenova/transformers", "AI"],
+		"category": "pet"
+	},
+	{
+		"name": "Droplify",
+		"description": "Dropbox-style file storage platform with Next.js, Clerk authentication, and Drizzle ORM for secure, scalable data management.",
+		"github": "https://github.com/vrovsky/droplify",
+		"tech": ["NextJS", "Clerk", "Neon", "Drizzle ORM", "ImageKit"],
+		"image": "/droplify.png",
+		"category": "pet"
+	},
+	{
+		"name": "Calendoor",
+		"description": "Calendly-inspired scheduling SaaS using Next.js and serverless database architecture for efficient appointment booking.",
+		"github": "https://github.com/vrovsky/calendoor",
+		"tech": ["NextJS", "Clerk", "Neon", "Drizzle ORM", "Serverless"],
+		"image": "/calendoor.png",
+		"category": "pet"
+	},
+	{
+		"name": "SwoleFit",
+		"description": "Web application to generate personalized fitness programs, integrating user data for customized recommendations.",
+		"github": "https://github.com/vrovsky/swoley-fit-reactjs",
+		"live": "https://swoley-portfolio.netlify.app",
+		"tech": ["ReactJS", "TailwindCSS", "Vite"],
+		"image": "/swolefit.png",
+		"category": "pet"
+	},
+	{
+		"name": "Pumpgram",
+		"description": "Minimalistic gym weight tracking tool to simplify progress monitoring for users.",
+		"github": "https://github.com/vrovsky/pumpgram",
+		"live": "https://pumpgram.netlify.app/",
+		"tech": ["ReactJS", "FantaCSS", "Vite"],
+		"image": "/pumpgram.png",
+		"category": "pet"
+	},
+	{
+		"name": "r_wp",
+		"description": "High-performance Rust web parser leveraging Reqwest for fast data extraction and processing.",
+		"github": "https://github.com/vrovsky/r_wp",
+		"tech": ["Rust", "Reqwest", "Web Parsing"],
+		"category": "pet"
+	},
+	{
+		"name": "tp_codec",
+		"description": "TypeScript codec implemented in Rust, enabling efficient data encoding and decoding across languages.",
+		"github": "https://github.com/vrovsky/tp_codec",
+		"tech": ["Rust", "TypeScript", "Codec"],
+		"category": "pet"
+	}
+]

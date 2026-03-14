@@ -1,0 +1,23 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Rust files
+*.rs text eol=lf
+
+# JavaScript/TypeScript/Svelte
+*.js text eol=lf
+*.ts text eol=lf
+*.svelte text eol=lf
+*.json text eol=lf
+
+# Config files
+*.toml text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+
+# CSS
+*.css text eol=lf
+
+# Lock files - keep as is
+package-lock.json binary
+Cargo.lock binary

@@ -1,0 +1,76 @@
+[
+	{
+		"name": "World.Inc",
+		"description": "Led engineering team of frontend and smart-contract developers, establishing architecture standards and development processes. Architected scalable frontend infrastructure to handle real-time market data streams, improving system responsiveness for high-volume trading environments. Implemented core trading features including one-click trading, real-time chart updates, and high-frequency UI interactions of the centralized exchange platform.",
+		"github": "https://github.com/World-Markets-Inc/client",
+		"live": "https://docs.world.inc/",
+		"tech": ["TypeScript", "Rust", "MegaETH", "Frontend Architecture", "Team Leadership"],
+		"category": "professional"
+	},
+	{
+		"name": "EVAA Protocol",
+		"description": "Engineered MVP for a TON blockchain-based lending protocol, incorporating Rust-based smart contracts for cross-chain operations with Solana. Optimized frontend and backend performance, reducing application load times by 63% through targeted code refactoring. Delivered DeFi platform features under tight deadlines during rapid development cycles and hackathon competitions.",
+		"github": "https://github.com/evaafi",
+		"live": "https://app.evaa.finance/",
+		"tech": ["Rust", "TON Blockchain", "Solana", "TypeScript", "DeFi", "FunC"],
+		"category": "professional"
+	},
+	{
+		"name": "Supa Doge",
+		"description": "Developed smart contracts on NEAR blockchain, integrating with gaming backend systems to support interactive features. Built Solidity contracts for Ethereum interoperability, enabling cross-platform functionality. Independently designed and launched production-ready MVP frontend within three weeks.",
+		"live": "https://supadoge.com/",
+		"tech": ["Rust", "Solidity", "Etherium", "NEAR", "NextJS", "TypeScript"],
+		"category": "professional"
+	},
+	{
+		"name": "AI Video Editor MVP",
+		"description": "Transcript-driven rough rust based video cut engine.",
+		"github": "https://github.com/vrovsky/yt_editor",
+		"tech": ["Rust", "NAPI-RS", "Express", "React", "Remotion"],
+		"category": "pet"
+	},
+	{
+		"name": "Picture Merger",
+		"description": "Rust povered codec for merging two or more pictures by pixel. Telegram bot wrapper for advanced utilisation.",
+		"github": "https://github.com/vrovsky/tp_codec",
+		"tech": ["Rust", "Teloxide ", "Tokio", "Serde", "Docker"],
+		"category": "pet"
+	},
+	{
+		"name": "Lightweight Live Wallpaper for Windows",
+		"description": "Lightweight rust povered desktop video wallpaper engine",
+		"github": "https://github.com/vrovsky/r_wp",
+		"tech": ["Rust", "Windows Core", "Raw Window Handle"],
+		"category": "pet"
+	},
+		{
+		"name": "This Portfolio",
+		"description": "Full-stack portfolio with SvelteKit frontend featuring 3D animations and Rust Axum backend API. Includes Three.js background effects, GSAP animations, and Tailwind CSS styling.",
+		"github": "https://github.com/vrovsky/portfolio",
+		"tech": ["SvelteKit", "Rust", "Axum", "TailwindCSS", "Three.js", "GSAP", "TypeScript"],
+		"category": "pet"
+	},
+	{
+		"name": "Free-Scr[ai]be",
+		"description": "AI-powered tool to transcribe and translate audio recordings using React and transformer models to automate multilingual content processing.",
+		"github": "https://github.com/vrovsky/free-scribe",
+		"live": "https://freescriber.netlify.app/",
+		"tech": ["ReactJS", "TailwindCSS", "Xenova/transformers", "AI"],
+		"category": "pet"
+	},
+	{
+		"name": "Droplify",
+		"description": "Dropbox-clone file storage platform with Next.js, Clerk authentication, and Drizzle ORM for secure, scalable data management.",
+		"github": "https://github.com/vrovsky/droplify",
+		"tech": ["NextJS", "Clerk", "Neon", "Drizzle ORM", "ImageKit"],
+		"category": "pet"
+	},
+	{
+		"name": "SwoleFit",
+		"description": "Web application to generate personalized fitness programs, integrating user data for customized recommendations.",
+		"github": "https://github.com/vrovsky/swoley-fit-reactjs",
+		"live": "https://swoley-portfolio.netlify.app",
+		"tech": ["ReactJS", "TailwindCSS", "Vite"],
+		"category": "pet"
+	}
+]

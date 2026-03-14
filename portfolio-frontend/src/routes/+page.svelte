@@ -37,20 +37,23 @@
 <div
 	use:inview
 	oninview_change={handleInView}
-	class="flex flex-row-reverse justify-between gap-12 px-80 opacity-0 transition-opacity duration-500"
+	class="flex flex-col justify-between gap-6 px-4 opacity-0 transition-opacity duration-500 lg:flex-row-reverse lg:gap-12 lg:px-80"
 	class:opacity-100={isInView}
 >
-	<section class="justify-top from-primary/20 to-accent/20 flex flex-col items-end pt-60">
-		<h1 class="mb-4 text-6xl font-bold">Viachaslau Rouski</h1>
-		<p class="mb-8 text-3xl">Full-Stack Developer | Rust & TypeScript Enthusiast</p>
-		<p class="mb-8 max-w-2xl text-center text-lg">
+	<section
+		class="flex flex-col items-center justify-start from-primary/20 to-accent/20 pt-8 text-center lg:items-end lg:pt-60 lg:text-end"
+	>
+		<h1 class="mb-4 text-3xl font-bold lg:text-6xl">Viachaslau Rouski</h1>
+		<p class="text-xl lg:text-3xl">Full-Stack Developer</p>
+		<p class="mb-8 text-xl lg:text-3xl">Rust & TypeScript Enthusiast</p>
+		<p class="mb-8 max-w-2xl text-base lg:text-lg">
 			Building performant apps with a focus on AI, blockchain, and finantial tech.
 		</p>
 		<div class="mb-8 flex space-x-4 backdrop-blur-sm transition-all">
 			<a
 				target="_blank"
 				href="https://github.com/vrovsky"
-				class="bg-accent/80 hover:bg-accent rounded-md px-6 py-2 opacity-50 hover:opacity-100"
+				class="rounded-md bg-accent/80 px-6 py-2 opacity-50 hover:bg-accent hover:opacity-100"
 				>GitHub</a
 			>
 			<a
@@ -61,7 +64,7 @@
 			>
 			<a
 				href="mailto:vrovsky@gmail.com"
-				class="bg-primary/80 hover:bg-primary rounded-md px-6 py-2 opacity-50 hover:opacity-100"
+				class="rounded-md bg-primary/80 px-6 py-2 opacity-50 hover:bg-primary hover:opacity-100"
 				>Email Me</a
 			>
 		</div>
@@ -96,10 +99,10 @@
 		{/if}
 	</section>
 
-	<div use:inview class="from-primary/20 to-accent/20 flex flex-col pt-20">
+	<div use:inview class="flex flex-col from-primary/20 to-accent/20 pt-12 lg:pt-20">
 		<section in:fade={{ duration: 800 }}>
-			<h2 class="mb-8 text-start text-4xl font-bold">Skills</h2>
-			<div class="flex flex-col gap-6">
+			<h2 class="mb-8 text-center text-2xl font-bold lg:text-start lg:text-4xl">Skills</h2>
+			<div class="flex flex-col gap-4 lg:gap-6">
 				<div class="rounded-xs bg-white/10 p-6 shadow-md backdrop-blur-lg hover:bg-pink-500/20">
 					<h3 class="mb-4 text-2xl">Tech Stack</h3>
 					<p>
@@ -134,21 +137,25 @@
 		</section>
 	</div>
 </div>
-<section class="px-80 pt-60 pb-4">
-	<h2 class="mb-12 text-end text-4xl font-bold">Last Professional Work</h2>
-	<div class="grid grid-cols-3 gap-8">
+<section class="px-4 pt-12 pb-4 lg:px-80 lg:pt-60">
+	<h2 class="mb-8 text-center text-2xl font-bold lg:mb-12 lg:text-end lg:text-4xl">
+		Last Professional Work
+	</h2>
+	<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
 		{#each professionalProjects as project (project.name)}
-			<div class="bg-accent/10 hover:bg-accent/40 rounded-sm p-4 shadow-md" role="article">
+			<div class="rounded-sm bg-accent/10 p-4 shadow-md hover:bg-accent/40" role="article">
 				<ProjectCard {project} />
 			</div>
 		{/each}
 	</div>
 </section>
-<section class="px-80 pt-20 pb-20">
-	<h2 class="mb-12 text-end text-4xl font-bold">Last Pet Projects</h2>
-	<div class="grid grid-cols-3 gap-8">
+<section class="px-4 pt-8 pb-12 lg:px-80 lg:pt-20 lg:pb-20">
+	<h2 class="mb-8 text-center text-2xl font-bold lg:mb-12 lg:text-end lg:text-4xl">
+		Last Pet Projects
+	</h2>
+	<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
 		{#each petProjects as project (project.name)}
-			<div class="bg-accent/10 hover:bg-accent/40 rounded-sm p-4 shadow-md" role="article">
+			<div class="rounded-sm bg-accent/10 p-4 shadow-md hover:bg-accent/40" role="article">
 				<ProjectCard {project} />
 			</div>
 		{/each}

@@ -27,19 +27,19 @@
 			target="_blank"
 			href="https://github.com/vrovsky"
 			aria-label="GitHub"
-			class="hover:text-primary transition-colors"><i class="fab fa-github"></i></a
+			class="transition-colors hover:text-primary"><i class="fab fa-github"></i></a
 		>
 		<a
 			target="_blank"
 			href="https://www.linkedin.com/in/viachaslau-rouski-58840521a/"
 			aria-label="LinkedIn"
-			class="hover:text-primary transition-colors"><i class="fab fa-linkedin"></i></a
+			class="transition-colors hover:text-primary"><i class="fab fa-linkedin"></i></a
 		>
 		<a
 			target="_blank"
 			href="mailto:vrovsky@gmail.com"
 			aria-label="Email"
-			class="hover:text-primary rotate-90 transition-colors"><i class="fab fa-envelope"></i></a
+			class="rotate-90 transition-colors hover:text-primary"><i class="fab fa-envelope"></i></a
 		>
 	</nav>
 </header>

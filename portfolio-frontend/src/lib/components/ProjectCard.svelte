@@ -5,16 +5,17 @@
 </script>
 
 <div class="opacity-80 hover:opacity-100" role="region">
-	<h4 class="mb-2 text-2xl font-bold">{project.name}</h4>
+	<h4 class="mb-2 text-xl font-bold lg:text-2xl">{project.name}</h4>
 	<div class="mb-4 flex flex-wrap gap-2">
 		{#each project.tech as tech (tech)}
-			<span class="bg-primary/40 hover:bg-primary/80 rounded-sm px-3 py-1 text-sm transition-colors"
+			<span
+				class="rounded-sm bg-primary/40 px-2 py-1 text-xs transition-colors hover:bg-primary/80 lg:px-3 lg:text-sm"
 				>{tech}</span
 			>
 		{/each}
 	</div>
-	<div class="min-h-20 flex-1">
-		<p>{project.description}</p>
+	<div class="min-h-16 flex-1 lg:min-h-20">
+		<p class="text-sm lg:text-base">{project.description}</p>
 		<div class="mt-4 flex space-x-4">
 			{#if project.github}
 				<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->

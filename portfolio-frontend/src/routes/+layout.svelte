@@ -37,6 +37,12 @@
 		>
 		<a
 			target="_blank"
+			href="https://t.me/rovskyv"
+			aria-label="Telegram"
+			class="transition-colors hover:text-primary"><i class="fab fa-telegram"></i></a
+		>
+		<a
+			target="_blank"
 			href="mailto:vrovsky@gmail.com"
 			aria-label="Email"
 			class="rotate-90 transition-colors hover:text-primary"><i class="fab fa-envelope"></i></a

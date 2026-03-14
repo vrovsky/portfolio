@@ -67,6 +67,12 @@
 				class="rounded-md bg-primary/80 px-6 py-2 opacity-50 hover:bg-primary hover:opacity-100"
 				>Email Me</a
 			>
+			<a
+				target="_blank"
+				href="https://t.me/rovskyv"
+				class="rounded-md bg-blue-500/80 px-6 py-2 opacity-50 hover:bg-blue-500 hover:opacity-100"
+				>Telegram</a
+			>
 		</div>
 		<button
 			onclick={playGame}

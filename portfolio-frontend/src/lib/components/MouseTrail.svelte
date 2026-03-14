@@ -34,7 +34,7 @@
 			'fixed',
 			'w-12',
 			'h-12',
-			'rounded-xs',
+			'rounded-sm',
 			'pointer-events-none',
 			'mix-blend-screen',
 			'will-change-transform-opacity',

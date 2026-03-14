@@ -16,7 +16,7 @@
 		rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 	/>
-	<title>Rouski Portfolio</title>
+	<title>Vi Rovsky Portfolio</title>
 </svelte:head>
 
 <header
@@ -57,7 +57,7 @@
 <footer class="bg-gray-800/50 p-4 text-start text-white backdrop-blur-md">
 	<p>
 		<a href="https://www.linkedin.com/in/viachaslau-rouski-58840521a/" class="hover:text-primary"
-			>Vi Rouski</a
+			>Vi Rovsky</a
 		>, 2026
 	</p>
 </footer>

@@ -3,7 +3,7 @@
 		"name": "World.Inc",
 		"description": "Led a frontend and smart-contract engineering team. Established architecture standards and development processes.\n\nArchitected scalable frontend infrastructure to handle real-time market data streams for high-volume trading environments.\n\nImplemented core trading features: one-click trading, real-time chart updates, and high-frequency UI interactions for a centralized exchange platform.",
 		"github": "https://github.com/World-Markets-Inc/client",
-		"live": "https://docs.world.inc/",
+		"live": "https://world.inc/",
 		"tech": ["TypeScript", "Rust", "MegaETH", "Frontend Architecture", "Team Leadership"],
 		"category": "professional"
 	},
@@ -23,7 +23,7 @@
 		"category": "professional"
 	},
 	{
-		"name": "AI Video Editor MVP",
+		"name": "Modeled Video Editor",
 		"description": "Transcript-driven rough rust based video cut engine.",
 		"github": "https://github.com/vrovsky/yt_editor",
 		"tech": ["Rust", "NAPI-RS", "Express", "React", "Remotion"],
@@ -31,9 +31,9 @@
 	},
 	{
 		"name": "Picture Merger",
-		"description": "Rust povered codec for merging two or more pictures by pixel. Telegram bot wrapper for advanced utilisation.",
+		"description": "Rust powered codec for merging two or more pictures by pixel. Telegram bot wrapper for advanced utilisation.",
 		"github": "https://github.com/vrovsky/tp_codec",
-		"tech": ["Rust", "Teloxide ", "Tokio", "Serde", "Docker"],
+		"tech": ["Rust", "Teloxide ", "Tokio", "Serde", "Telegram", "Docker"],
 		"category": "pet"
 	},
 	{

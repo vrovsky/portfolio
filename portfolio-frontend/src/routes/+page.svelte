@@ -49,7 +49,7 @@
 		<p class="mb-8 max-w-2xl text-base lg:text-lg">
 			Building performant apps with a focus on AI, blockchain, and finantial tech.
 		</p>
-		<div class="mb-8 flex space-x-4 backdrop-blur-sm transition-all">
+		<div class="mb-8 hidden space-x-4 backdrop-blur-sm transition-all lg:flex">
 			<a
 				target="_blank"
 				href="https://github.com/vrovsky"

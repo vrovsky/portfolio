@@ -151,7 +151,7 @@
 				>
 					<h3 class="mb-4 text-2xl">Languages</h3>
 					<p>
-						English — Fluent | Belarussian, Russian — Native <br /> Portugese, Spanish, French - Under-intermediate
+						English, Belarussian, Russian — Fluent <br /> Portugese, Spanish, French - Pre-intermediate
 					</p>
 				</div>
 			</div>

@@ -37,11 +37,11 @@
 <div
 	use:inview
 	oninview_change={handleInView}
-	class="flex flex-col justify-between gap-6 px-4 transition-opacity duration-500 lg:flex-row-reverse lg:gap-12 lg:px-80"
+	class="mx-auto flex w-full max-w-7xl flex-col justify-between gap-6 px-4 transition-opacity duration-500 lg:flex-row-reverse lg:gap-12 lg:px-8"
 	class:opacity-100={isInView}
 >
 	<section
-		class="flex flex-col items-center justify-start from-primary/20 to-accent/20 pt-8 text-center lg:items-end lg:pt-60 lg:text-end"
+		class="flex flex-col items-center justify-start from-primary/20 to-accent/20 pt-8 text-center lg:items-end lg:pt-32 lg:text-end"
 	>
 		<h1 class="mb-4 text-3xl font-bold md:text-2xl lg:text-5xl">Viachaslau Rouski</h1>
 		<p class="text-xl md:text-xl lg:text-2xl">Senior Full-Stack Engineer & Team Lead</p>
@@ -112,7 +112,7 @@
 
 	<div use:inview class="flex flex-col from-primary/20 to-accent/20 pt-12 lg:pt-20">
 		<section in:fade={{ duration: 800 }}>
-			<h2 class="mb-8 text-center text-2xl font-bold md:text-xl lg:text-start lg:text-4xl">
+			<h2 class="mb-8 text-center text-2xl font-bold sm:text-3xl lg:text-start lg:text-4xl">
 				Skills
 			</h2>
 			<div class="flex flex-col gap-4 lg:gap-6">
@@ -127,7 +127,16 @@
 					</p>
 				</div>
 				<div
-					class="col-span-2 rounded-sm bg-white/10 bg-linear-to-br from-slate-900/40 via-blue-950/40 to-cyan-950/30 p-6 shadow-md hover:bg-violet-900/40"
+					class="rounded-sm bg-white/10 bg-linear-to-br from-slate-900/40 via-blue-950/40 to-cyan-950/30 p-6 shadow-md hover:bg-violet-900/40"
+				>
+					<h3 class="mb-4 text-2xl">AI & LLM</h3>
+					<p>
+						OpenAI API | Claude / Anthropic API | LLM Integration | RAG <br /> Vector Databases |
+						Hugging Face Transformers | AI Agents <br /> Prompt Engineering | LangChain | AI-Powered Apps
+					</p>
+				</div>
+				<div
+					class="rounded-sm bg-white/10 bg-linear-to-br from-slate-900/40 via-blue-950/40 to-cyan-950/30 p-6 shadow-md hover:bg-violet-900/40"
 				>
 					<h3 class="mb-4 text-2xl">Leadership & Soft Skills</h3>
 					<p>
@@ -159,8 +168,8 @@
 		</section>
 	</div>
 </div>
-<section class="px-4 pt-12 pb-4 lg:px-80 lg:pt-60">
-	<h2 class="mb-8 text-center text-2xl font-bold md:text-2xl lg:mb-12 lg:text-end lg:text-4xl">
+<section class="mx-auto max-w-7xl px-4 pt-16 pb-4 lg:px-8 lg:pt-24">
+	<h2 class="mb-8 text-center text-2xl font-bold sm:text-3xl lg:mb-12 lg:text-end lg:text-4xl">
 		Last Professional Work
 	</h2>
 	<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
@@ -173,8 +182,8 @@
 		{/each}
 	</div>
 </section>
-<section class="px-4 pt-8 pb-12 lg:px-80 lg:pt-20 lg:pb-20">
-	<h2 class="mb-8 text-center text-2xl font-bold md:text-3xl lg:mb-12 lg:text-end lg:text-4xl">
+<section class="mx-auto max-w-7xl px-4 pt-8 pb-12 lg:px-8 lg:pt-16 lg:pb-20">
+	<h2 class="mb-8 text-center text-2xl font-bold sm:text-3xl lg:mb-12 lg:text-end lg:text-4xl">
 		Last Pet Projects
 	</h2>
 	<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">

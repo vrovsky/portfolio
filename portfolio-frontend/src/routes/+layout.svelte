@@ -16,7 +16,23 @@
 		rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 	/>
-	<title>Vi Rovsky Portfolio</title>
+	<title>Viachaslau Rouski — Senior Full-Stack Engineer & Team Lead</title>
+	<meta
+		name="description"
+		content="Viachaslau Rouski — Senior Full-Stack Engineer and Team Lead specializing in Rust, TypeScript, React and Web3. Building high-performance trading, DeFi and AI platforms."
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Viachaslau Rouski — Senior Full-Stack Engineer & Team Lead" />
+	<meta
+		property="og:description"
+		content="Senior Full-Stack Engineer and Team Lead specializing in Rust, TypeScript, React and Web3."
+	/>
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Viachaslau Rouski — Senior Full-Stack Engineer & Team Lead" />
+	<meta
+		name="twitter:description"
+		content="Senior Full-Stack Engineer and Team Lead specializing in Rust, TypeScript, React and Web3."
+	/>
 </svelte:head>
 
 <header

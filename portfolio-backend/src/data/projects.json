@@ -3,7 +3,7 @@
 		"name": "World.Inc",
 		"description": "Led a frontend and smart-contract engineering team. Established architecture standards and development processes.\n\nArchitected scalable frontend infrastructure to handle real-time market data streams for high-volume trading environments.\n\nImplemented core trading features: one-click trading, real-time chart updates, and high-frequency UI interactions for a centralized exchange platform.",
 		"github": "https://github.com/World-Markets-Inc/client",
-		"live": "https://docs.world.inc/",
+		"live": "https://world.inc/",
 		"tech": ["TypeScript", "Rust", "MegaETH", "Frontend Architecture", "Team Leadership"],
 		"category": "professional"
 	},
@@ -19,33 +19,33 @@
 		"name": "Supa Doge",
 		"description": "Developed smart contracts on NEAR blockchain, integrating with gaming backend systems for interactive features.\n\nBuilt Solidity contracts for Ethereum interoperability, enabling cross-platform functionality.\n\nIndependently designed and launched a production-ready MVP frontend within three weeks.",
 		"live": "https://supadoge.com/",
-		"tech": ["Rust", "Solidity", "Etherium", "NEAR", "NextJS", "TypeScript"],
+		"tech": ["Rust", "Solidity", "Ethereum", "NEAR", "NextJS", "TypeScript"],
 		"category": "professional"
 	},
 	{
 		"name": "AI Video Editor MVP",
-		"description": "Transcript-driven rough rust based video cut engine.",
+		"description": "Transcript-driven, rough-cut Rust-based video editing engine.",
 		"github": "https://github.com/vrovsky/yt_editor",
 		"tech": ["Rust", "NAPI-RS", "Express", "React", "Remotion"],
 		"category": "pet"
 	},
 	{
 		"name": "Picture Merger",
-		"description": "Rust povered codec for merging two or more pictures by pixel. Telegram bot wrapper for advanced utilisation.",
+		"description": "Rust-powered codec for merging two or more pictures by pixel. Telegram bot wrapper for advanced usage.",
 		"github": "https://github.com/vrovsky/tp_codec",
-		"tech": ["Rust", "Teloxide ", "Tokio", "Serde", "Docker"],
+		"tech": ["Rust", "Teloxide", "Tokio", "Serde", "Telegram", "Docker"],
 		"category": "pet"
 	},
 	{
 		"name": "Lightweight Live Wallpaper for Windows",
-		"description": "Lightweight rust povered desktop video wallpaper engine",
+		"description": "Lightweight Rust-powered desktop video wallpaper engine.",
 		"github": "https://github.com/vrovsky/r_wp",
 		"tech": ["Rust", "Windows Core", "Raw Window Handle"],
 		"category": "pet"
 	},
-		{
+	{
 		"name": "This Portfolio",
-		"description": "Full-stack portfolio with SvelteKit frontend featuring 3D animations and Rust Axum backend API. Includes Three.js background effects, GSAP animations, and Tailwind CSS styling.",
+		"description": "Full-stack portfolio with a SvelteKit frontend featuring 3D animations and a Rust Axum backend API. Includes Three.js background effects, GSAP animations, and Tailwind CSS styling.",
 		"github": "https://github.com/vrovsky/portfolio",
 		"tech": ["SvelteKit", "Rust", "Axum", "TailwindCSS", "Three.js", "GSAP", "TypeScript"],
 		"category": "pet"

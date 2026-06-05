@@ -4,7 +4,7 @@
 	let { project }: { project: Project } = $props();
 </script>
 
-<div class="flex h-full flex-col opacity-80 hover:opacity-100" role="region">
+<div class="flex h-full flex-col opacity-80 hover:opacity-100">
 	<h4 class="mb-4 text-xl font-bold md:text-xl lg:text-2xl">{project.name}</h4>
 	<div class="mb-4 flex flex-wrap gap-2">
 		{#each project.tech as tech (tech)}
@@ -15,7 +15,7 @@
 		{/each}
 	</div>
 	<div class="flex min-h-16 flex-1 flex-col justify-between lg:min-h-20">
-		<p class="text-sm whitespace-pre-line text-slate-300 md:text-sm lg:text-base mb-4">
+		<p class="mb-4 text-sm whitespace-pre-line text-slate-300 md:text-sm lg:text-base">
 			{project.description}
 		</p>
 		<div class="mt-auto flex w-full space-x-4">

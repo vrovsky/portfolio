@@ -9,6 +9,8 @@
 
 	onMount(() => {
 		if (!browser) return;
+		// Respect users who prefer reduced motion — skip the cursor trail entirely.
+		if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
 		const handleMouseMove = (e: MouseEvent) => {
 			mouse.x = e.clientX;

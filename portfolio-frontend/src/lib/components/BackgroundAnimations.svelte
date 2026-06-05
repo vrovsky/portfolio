@@ -17,6 +17,8 @@
 
 	onMount(() => {
 		if (!browser) return;
+		// Respect users who prefer reduced motion — skip the continuous WebGL animation.
+		if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
 		initThree();
 		animate();

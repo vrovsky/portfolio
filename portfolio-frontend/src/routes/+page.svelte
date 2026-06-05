@@ -9,7 +9,7 @@
 	let professionalProjects = $derived(data.projects.filter((p) => p.category === 'professional'));
 	let petProjects = $derived(data.projects.filter((p) => p.category === 'pet'));
 
-	let isInView = $state(false);
+	let isInView = $state(true);
 	let showGame = $state(false);
 	let selectedColor = $state('#A00ABE');
 	let ruined = $state(false);
@@ -37,17 +37,17 @@
 <div
 	use:inview
 	oninview_change={handleInView}
-	class="flex flex-col justify-between gap-6 px-4 opacity-0 transition-opacity duration-500 lg:flex-row-reverse lg:gap-12 lg:px-80"
+	class="flex flex-col justify-between gap-6 px-4 transition-opacity duration-500 lg:flex-row-reverse lg:gap-12 lg:px-80"
 	class:opacity-100={isInView}
 >
 	<section
 		class="flex flex-col items-center justify-start from-primary/20 to-accent/20 pt-8 text-center lg:items-end lg:pt-60 lg:text-end"
 	>
 		<h1 class="mb-4 text-3xl font-bold md:text-2xl lg:text-5xl">Viachaslau Rouski</h1>
-		<p class="text-xl md:text-xl lg:text-2xl">Full-Stack Developer</p>
-		<p class="mb-8 text-xl md:text-xl lg:text-2xl">Rust & TypeScript Enthusiast</p>
+		<p class="text-xl md:text-xl lg:text-2xl">Senior Full-Stack Engineer & Team Lead</p>
+		<p class="mb-8 text-xl md:text-xl lg:text-2xl">Rust & TypeScript</p>
 		<p class="md:text-md mb-8 max-w-2xl text-base lg:text-lg">
-			Building performant apps with a focus on AI, blockchain, and finantial tech.
+			Building high-performance apps with a focus on AI, blockchain, and financial tech.
 		</p>
 		<div class="mb-8 hidden space-x-4 backdrop-blur-sm transition-all lg:flex">
 			<a
@@ -76,8 +76,8 @@
 		</div>
 		<button
 			onclick={playGame}
-			class="hover:bg-green600 rounded-sm bg-green-600 px-6 py-2 text-white opacity-0 backdrop-blur-sm transition-opacity duration-200 hover:bg-green-500 hover:opacity-100"
-			class:opacity-80={isInView}>Explore the Colors</button
+			class="rounded-sm bg-green-600 px-6 py-2 text-white opacity-80 backdrop-blur-sm transition-opacity duration-200 hover:bg-green-500 hover:opacity-100"
+			>Explore the Colors</button
 		>
 		{#if showGame}
 			<div in:fade={{ duration: 500 }} class="flex flex-col rounded-sm p-4">
@@ -89,11 +89,11 @@
 								type="color"
 								bind:value={selectedColor}
 								onchange={(e) => changeColor(e.currentTarget.value)}
-								class="h-12 w-12 cursor-pointer border border-white rounded-sm hover:scale-105"
+								class="h-12 w-12 cursor-pointer rounded-sm border border-white hover:scale-105"
 							/>
 							<button
 								onclick={resetColor}
-								class="rounded-sm bg-red-500 border border-black p-2 text-white transition-all hover:scale-105"
+								class="rounded-sm border border-black bg-red-500 p-2 text-white transition-all hover:scale-105"
 								>Reset</button
 							>
 						</div>
@@ -131,7 +131,7 @@
 				>
 					<h3 class="mb-4 text-2xl">Leadership & Soft Skills</h3>
 					<p>
-						Team Management | Cross-functional Collaboration <br /> Leadership | Work Proccesses Adjustment
+						Team Leadership | Mentorship | Cross-functional Collaboration <br /> Engineering Process Improvement
 					</p>
 				</div>
 				<div
@@ -151,7 +151,8 @@
 				>
 					<h3 class="mb-4 text-2xl">Languages</h3>
 					<p>
-						English, Belarussian, Russian — Fluent <br /> Portugese, Spanish, French - Pre-intermediate
+						English — Fluent <br /> Belarusian, Russian — Native <br /> Spanish, French — Intermediate
+						| Portuguese — Basic
 					</p>
 				</div>
 			</div>
@@ -166,7 +167,6 @@
 		{#each professionalProjects as project (project.name)}
 			<div
 				class="rounded-sm bg-white/10 bg-linear-to-br from-slate-900/40 via-blue-950/40 to-cyan-950/30 p-6 shadow-md hover:bg-violet-900/40"
-				role="article"
 			>
 				<ProjectCard {project} />
 			</div>
@@ -181,7 +181,6 @@
 		{#each petProjects as project (project.name)}
 			<div
 				class="rounded-sm bg-white/10 bg-linear-to-br from-slate-900/40 via-blue-950/40 to-cyan-950/30 p-6 shadow-md hover:bg-violet-900/40"
-				role="article"
 			>
 				<ProjectCard {project} />
 			</div>

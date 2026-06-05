@@ -1,19 +1,22 @@
 import type { PageLoad } from './$types';
 import type { Project } from '$lib/types';
 import projectsData from '$lib/data/projects.json';
-
-const API_URL = import.meta.env.PUBLIC_API_URL || 'http://localhost:3001';
+import { env } from '$env/dynamic/public';
 
 export const load: PageLoad = async ({ fetch }) => {
-	try {
-		const res = await fetch(`${API_URL}/projects`);
+	const apiUrl = env.PUBLIC_API_URL;
 
-		if (res.ok) {
-			const projects: Project[] = await res.json();
-			return { projects };
+	// Only hit the backend when an API URL is explicitly configured (e.g. local dev).
+	// In production with no backend deployed, serve the bundled data directly — no failed request.
+	if (apiUrl) {
+		try {
+			const res = await fetch(`${apiUrl}/projects`);
+			if (res.ok) {
+				return { projects: (await res.json()) as Project[] };
+			}
+		} catch {
+			console.warn('Backend unavailable, using fallback data');
 		}
-	} catch {
-		console.warn('Backend unavailable, using fallback data');
 	}
 
 	return { projects: projectsData as Project[] };

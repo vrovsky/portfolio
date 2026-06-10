@@ -1,10 +1,8 @@
-import adapter from '@sveltejs/adapter-vercel';
+import adapter from '@sveltejs/adapter-netlify';
 
 const config = {
 	kit: {
-		adapter: adapter({
-			strict: true
-		})
+		adapter: adapter()
 	},
 	vitePlugin: {
 		dynamicCompileOptions: ({ filename }) =>

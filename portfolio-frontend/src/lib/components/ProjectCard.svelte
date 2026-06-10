@@ -9,7 +9,7 @@
 	<div class="mb-4 flex min-h-14 flex-wrap content-start gap-2 lg:min-h-16">
 		{#each project.tech as tech (tech)}
 			<span
-				class="transition-color rounded-sm border border-cyan-700/40 bg-cyan-900/60 px-2 py-1 text-xs text-cyan-200 hover:bg-cyan-800/70 md:px-2 md:text-xs lg:px-3 lg:text-sm"
+				class="chip rounded-sm border px-2 py-1 text-xs md:px-2 md:text-xs lg:px-3 lg:text-sm"
 				>{tech}</span
 			>
 		{/each}

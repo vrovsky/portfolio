@@ -6,12 +6,86 @@
 	--font-family-exo2: 'Exo 2', sans-serif;
 }
 
-/* Apply Exo 2 font globally */
-body {
-	font-family: 'Exo 2', sans-serif;
+@property --bg-hue {
+	syntax: '<number>';
+	inherits: true;
+	initial-value: 221;
 }
 
-/* Apply font to all buttons */
+body {
+	font-family: 'Exo 2', sans-serif;
+	animation: spectrum-drift 120s linear infinite;
+}
+
+@keyframes spectrum-drift {
+	0% {
+		background-color: hsl(221, 39%, 11%);
+		--bg-hue: 221;
+	}
+	12.5% {
+		background-color: hsl(266, 39%, 11%);
+		--bg-hue: 266;
+	}
+	25% {
+		background-color: hsl(311, 39%, 11%);
+		--bg-hue: 311;
+	}
+	37.5% {
+		background-color: hsl(356, 39%, 11%);
+		--bg-hue: 356;
+	}
+	50% {
+		background-color: hsl(41, 39%, 11%);
+		--bg-hue: 401;
+	}
+	62.5% {
+		background-color: hsl(86, 39%, 11%);
+		--bg-hue: 446;
+	}
+	75% {
+		background-color: hsl(131, 39%, 11%);
+		--bg-hue: 491;
+	}
+	87.5% {
+		background-color: hsl(176, 39%, 11%);
+		--bg-hue: 536;
+	}
+	100% {
+		background-color: hsl(221, 39%, 11%);
+		--bg-hue: 581;
+	}
+}
+
+.info-card {
+	background-color: rgb(255 255 255 / 0.1);
+	background-image: linear-gradient(
+		to bottom right,
+		hsl(calc((var(--bg-hue) + 1) * 1deg) 47% 11% / 0.4),
+		hsl(calc((var(--bg-hue) + 5) * 1deg) 57% 21% / 0.4),
+		hsl(calc((var(--bg-hue) - 24) * 1deg) 79% 15% / 0.3)
+	);
+}
+
+.info-card:hover {
+	background-color: hsl(calc((var(--bg-hue) + 42) * 1deg) 67% 35% / 0.4);
+}
+
+.chip {
+	border-color: hsl(calc((var(--bg-hue) - 28) * 1deg) 82% 31% / 0.4);
+	background-color: hsl(calc((var(--bg-hue) - 25) * 1deg) 64% 24% / 0.6);
+	color: hsl(calc((var(--bg-hue) - 35) * 1deg) 93% 82%);
+}
+
+.chip:hover {
+	background-color: hsl(calc((var(--bg-hue) - 27) * 1deg) 70% 27% / 0.7);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	body {
+		animation: none;
+	}
+}
+
 button,
 .btn,
 [role='button'] {

@@ -6,7 +6,7 @@
 
 <div class="flex h-full flex-col opacity-80 hover:opacity-100">
 	<h4 class="mb-4 min-h-14 text-xl font-bold md:text-xl lg:min-h-16 lg:text-2xl">{project.name}</h4>
-	<div class="mb-4 flex min-h-14 flex-wrap content-start gap-2 lg:min-h-16">
+	<div class="mb-4 flex flex-wrap content-start gap-2">
 		{#each project.tech as tech (tech)}
 			<span
 				class="chip rounded-sm border px-2 py-1 text-xs md:px-2 md:text-xs lg:px-3 lg:text-sm"

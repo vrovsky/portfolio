@@ -20,7 +20,7 @@
 <div
 	use:inview
 	oninview_change={handleInView}
-	class="mx-auto flex w-full max-w-7xl flex-col justify-between gap-6 px-4 transition-opacity duration-500 lg:flex-row lg:gap-12 lg:px-8"
+	class="mx-auto flex w-full max-w-[1600px] flex-col justify-between gap-6 px-4 transition-opacity duration-500 lg:flex-row lg:gap-12 lg:px-8"
 	class:opacity-100={isInView}
 >
 	<section
@@ -30,7 +30,7 @@
 		<h1 class="mb-4 text-3xl font-bold md:text-2xl lg:text-5xl">Viachaslau Rouski</h1>
 		<p class="text-xl md:text-xl lg:text-2xl">Senior Full-Stack Engineer & Team Lead</p>
 		<p class="mb-8 text-xl md:text-xl lg:text-2xl">Rust & TypeScript</p>
-		<p class="md:text-md mb-8 max-w-2xl text-base lg:text-lg">
+		<p class="md:text-md mb-8 max-w-2xl text-base text-pretty lg:text-lg lg:text-balance">
 			Building high-performance apps with a focus on AI, blockchain, and financial tech.
 		</p>
 		<div class="mb-8 hidden space-x-4 backdrop-blur-sm transition-all lg:flex">
@@ -124,7 +124,7 @@
 		</section>
 	</div>
 </div>
-<section class="mx-auto max-w-7xl px-4 pt-16 pb-4 lg:px-8 lg:pt-24">
+<section class="mx-auto max-w-[1600px] px-4 pt-16 pb-4 lg:px-8 lg:pt-24">
 	<h2 class="mb-8 text-center text-2xl font-bold sm:text-3xl lg:mb-12 lg:text-start lg:text-4xl">
 		Last Professional Work
 	</h2>
@@ -138,7 +138,7 @@
 		{/each}
 	</div>
 </section>
-<section class="mx-auto max-w-7xl px-4 pt-8 pb-12 lg:px-8 lg:pt-16 lg:pb-20">
+<section class="mx-auto max-w-[1600px] px-4 pt-8 pb-12 lg:px-8 lg:pt-16 lg:pb-20">
 	<h2 class="mb-8 text-center text-2xl font-bold sm:text-3xl lg:mb-12 lg:text-start lg:text-4xl">
 		Last Pet Projects
 	</h2>

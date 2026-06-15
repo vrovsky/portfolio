@@ -130,11 +130,7 @@
 	</h2>
 	<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
 		{#each professionalProjects as project (project.name)}
-			<div
-				class="info-card rounded-sm p-6 shadow-md"
-			>
-				<ProjectCard {project} />
-			</div>
+			<ProjectCard {project} />
 		{/each}
 	</div>
 </section>
@@ -144,11 +140,7 @@
 	</h2>
 	<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
 		{#each petProjects as project (project.name)}
-			<div
-				class="info-card rounded-sm p-6 shadow-md"
-			>
-				<ProjectCard {project} />
-			</div>
+			<ProjectCard {project} />
 		{/each}
 	</div>
 </section>

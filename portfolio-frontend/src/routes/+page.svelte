@@ -3,6 +3,7 @@
 	import { inview } from 'svelte-inview';
 	import type { Project } from '$lib/types';
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
+	import GlitchPhoto from '$lib/components/GlitchPhoto.svelte';
 
 	let { data }: { data: { projects: Project[] } } = $props();
 
@@ -19,12 +20,13 @@
 <div
 	use:inview
 	oninview_change={handleInView}
-	class="mx-auto flex w-full max-w-7xl flex-col justify-between gap-6 px-4 transition-opacity duration-500 lg:flex-row-reverse lg:gap-12 lg:px-8"
+	class="mx-auto flex w-full max-w-7xl flex-col justify-between gap-6 px-4 transition-opacity duration-500 lg:flex-row lg:gap-12 lg:px-8"
 	class:opacity-100={isInView}
 >
 	<section
-		class="flex flex-col items-center justify-start from-primary/20 to-accent/20 pt-8 text-center lg:flex-1 lg:items-end lg:pt-32 lg:text-end"
+		class="flex flex-col items-center justify-start from-primary/20 to-accent/20 pt-8 text-center lg:flex-1 lg:items-start lg:pt-20 lg:text-start"
 	>
+		<div class="flex flex-col items-center lg:w-full lg:items-start">
 		<h1 class="mb-4 text-3xl font-bold md:text-2xl lg:text-5xl">Viachaslau Rouski</h1>
 		<p class="text-xl md:text-xl lg:text-2xl">Senior Full-Stack Engineer & Team Lead</p>
 		<p class="mb-8 text-xl md:text-xl lg:text-2xl">Rust & TypeScript</p>
@@ -56,11 +58,17 @@
 				>Telegram</a
 			>
 		</div>
+		</div>
+		<div
+			class="mt-6 flex w-full justify-center lg:relative lg:mt-10 lg:block lg:min-h-0 lg:flex-1"
+		>
+			<GlitchPhoto src="/me-and-dog.webp" alt="Viachaslau Rouski with his dog" fill />
+		</div>
 	</section>
 
 	<div use:inview class="flex flex-col from-primary/20 to-accent/20 pt-12 lg:flex-1 lg:pt-20">
 		<section in:fade={{ duration: 800 }}>
-			<h2 class="mb-8 text-center text-2xl font-bold sm:text-3xl lg:text-start lg:text-4xl">
+			<h2 class="mb-8 text-center text-2xl font-bold sm:text-3xl lg:text-end lg:text-4xl">
 				Skills
 			</h2>
 			<div class="flex flex-col gap-4 lg:gap-6">
@@ -117,7 +125,7 @@
 	</div>
 </div>
 <section class="mx-auto max-w-7xl px-4 pt-16 pb-4 lg:px-8 lg:pt-24">
-	<h2 class="mb-8 text-center text-2xl font-bold sm:text-3xl lg:mb-12 lg:text-end lg:text-4xl">
+	<h2 class="mb-8 text-center text-2xl font-bold sm:text-3xl lg:mb-12 lg:text-start lg:text-4xl">
 		Last Professional Work
 	</h2>
 	<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
@@ -131,7 +139,7 @@
 	</div>
 </section>
 <section class="mx-auto max-w-7xl px-4 pt-8 pb-12 lg:px-8 lg:pt-16 lg:pb-20">
-	<h2 class="mb-8 text-center text-2xl font-bold sm:text-3xl lg:mb-12 lg:text-end lg:text-4xl">
+	<h2 class="mb-8 text-center text-2xl font-bold sm:text-3xl lg:mb-12 lg:text-start lg:text-4xl">
 		Last Pet Projects
 	</h2>
 	<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">

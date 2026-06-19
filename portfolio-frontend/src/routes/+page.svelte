@@ -27,41 +27,39 @@
 		class="flex flex-col items-center justify-start from-primary/20 to-accent/20 pt-8 text-center lg:flex-1 lg:items-start lg:pt-20 lg:text-start"
 	>
 		<div class="flex flex-col items-center lg:w-full lg:items-start">
-		<h1 class="mb-4 text-3xl font-bold md:text-2xl lg:text-5xl">Viachaslau Rouski</h1>
-		<p class="text-xl md:text-xl lg:text-2xl">Senior Full-Stack Engineer & Team Lead</p>
-		<p class="mb-8 text-xl md:text-xl lg:text-2xl">Rust & TypeScript</p>
-		<p class="md:text-md mb-8 max-w-2xl text-base text-pretty lg:text-lg lg:text-balance">
-			Building high-performance apps with a focus on AI, blockchain, and financial tech.
-		</p>
-		<div class="mb-8 hidden space-x-4 backdrop-blur-sm transition-all lg:flex">
-			<a
-				target="_blank"
-				href="https://github.com/vrovsky"
-				class="rounded-sm bg-violet-600 px-5 py-2 opacity-80 backdrop-blur-sm hover:bg-violet-500 hover:opacity-90"
-				>GitHub</a
-			>
-			<a
-				target="_blank"
-				href="https://www.linkedin.com/in/viachaslau-rouski-58840521a/"
-				class="rounded-sm bg-cyan-700 px-5 py-2 opacity-80 backdrop-blur-sm hover:bg-cyan-600 hover:opacity-90"
-				>LinkedIn</a
-			>
-			<a
-				href="mailto:vrovsky@gmail.com"
-				class="rounded-sm bg-sky-700 px-5 py-2 opacity-80 backdrop-blur-sm hover:bg-sky-600 hover:opacity-90"
-				>Email</a
-			>
-			<a
-				target="_blank"
-				href="https://t.me/rovskyv"
-				class="rounded-sm bg-blue-700 px-5 py-2 opacity-80 backdrop-blur-sm hover:bg-blue-600 hover:opacity-90"
-				>Telegram</a
-			>
+			<h1 class="mb-4 text-3xl font-bold md:text-2xl lg:text-5xl">Viachaslau Rouski</h1>
+			<p class="text-xl md:text-xl lg:text-2xl">Senior Full-Stack Engineer & Team Lead</p>
+			<p class="mb-8 text-xl md:text-xl lg:text-2xl">Rust & TypeScript</p>
+			<p class="md:text-md mb-8 max-w-2xl text-base text-pretty lg:text-lg lg:text-balance">
+				Building high-performance apps with a focus on AI, blockchain, and financial tech.
+			</p>
+			<div class="mb-8 hidden space-x-4 backdrop-blur-sm transition-all lg:flex">
+				<a
+					target="_blank"
+					href="https://github.com/vrovsky"
+					class="rounded-sm bg-violet-600 px-5 py-2 opacity-80 backdrop-blur-sm hover:bg-violet-500 hover:opacity-90"
+					>GitHub</a
+				>
+				<a
+					target="_blank"
+					href="https://www.linkedin.com/in/viachaslau-rouski-58840521a/"
+					class="rounded-sm bg-cyan-700 px-5 py-2 opacity-80 backdrop-blur-sm hover:bg-cyan-600 hover:opacity-90"
+					>LinkedIn</a
+				>
+				<a
+					href="mailto:vrovsky@gmail.com"
+					class="rounded-sm bg-sky-700 px-5 py-2 opacity-80 backdrop-blur-sm hover:bg-sky-600 hover:opacity-90"
+					>Email</a
+				>
+				<a
+					target="_blank"
+					href="https://t.me/rovskyv"
+					class="rounded-sm bg-blue-700 px-5 py-2 opacity-80 backdrop-blur-sm hover:bg-blue-600 hover:opacity-90"
+					>Telegram</a
+				>
+			</div>
 		</div>
-		</div>
-		<div
-			class="mt-6 flex w-full justify-center lg:relative lg:mt-10 lg:block lg:min-h-0 lg:flex-1"
-		>
+		<div class="mt-6 flex w-full justify-center lg:relative lg:mt-10 lg:block lg:min-h-0 lg:flex-1">
 			<GlitchPhoto src="/me-and-dog.webp" alt="Viachaslau Rouski with his dog" fill />
 		</div>
 	</section>
@@ -72,9 +70,7 @@
 				Skills
 			</h2>
 			<div class="flex flex-col gap-4 lg:gap-6">
-				<div
-					class="info-card rounded-sm p-6 shadow-md"
-				>
+				<div class="info-card rounded-sm p-6 shadow-md">
 					<h3 class="mb-4 text-2xl">Tech Stack</h3>
 					<p>
 						Rust | TypeScript | Solidity | Next.js | Node.js | React | SvelteKit <br /> TailwindCSS
@@ -82,38 +78,28 @@
 						| Axum
 					</p>
 				</div>
-				<div
-					class="info-card rounded-sm p-6 shadow-md"
-				>
+				<div class="info-card rounded-sm p-6 shadow-md">
 					<h3 class="mb-4 text-2xl">AI & LLM</h3>
 					<p>
 						OpenAI API | Claude / Anthropic API | LLM Integration | RAG <br /> Vector Databases |
 						Hugging Face Transformers | AI Agents <br /> Prompt Engineering | LangChain | AI-Powered Apps
 					</p>
 				</div>
-				<div
-					class="info-card rounded-sm p-6 shadow-md"
-				>
+				<div class="info-card rounded-sm p-6 shadow-md">
 					<h3 class="mb-4 text-2xl">Leadership & Soft Skills</h3>
 					<p>
 						Team Leadership | Mentorship | Cross-functional Collaboration <br /> Engineering Process Improvement
 					</p>
 				</div>
-				<div
-					class="info-card rounded-sm p-6 shadow-md"
-				>
+				<div class="info-card rounded-sm p-6 shadow-md">
 					<h3 class="mb-4 text-2xl">Methodologies</h3>
 					<p>Agile | Scrum | Kanban</p>
 				</div>
-				<div
-					class="info-card rounded-sm p-6 shadow-md"
-				>
+				<div class="info-card rounded-sm p-6 shadow-md">
 					<h3 class="mb-4 text-2xl">Tools</h3>
 					<p>JIRA | Trello | Miro | Notion | ClickUp</p>
 				</div>
-				<div
-					class="info-card rounded-sm p-6 shadow-md"
-				>
+				<div class="info-card rounded-sm p-6 shadow-md">
 					<h3 class="mb-4 text-2xl">Languages</h3>
 					<p>
 						English — Fluent <br /> Belarusian, Russian — Native <br /> Spanish, French — Intermediate

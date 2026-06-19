@@ -92,12 +92,7 @@
 		inset: 0;
 		background:
 			radial-gradient(120% 90% at 50% 30%, transparent 55%, rgb(0 0 0 / 0.55) 100%),
-			linear-gradient(
-				135deg,
-				hsl(190 100% 50% / 0.22),
-				transparent 45%,
-				hsl(315 100% 55% / 0.26)
-			);
+			linear-gradient(135deg, hsl(190 100% 50% / 0.22), transparent 45%, hsl(315 100% 55% / 0.26));
 		mix-blend-mode: soft-light;
 		pointer-events: none;
 	}

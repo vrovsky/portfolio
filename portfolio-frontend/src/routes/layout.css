@@ -71,13 +71,41 @@ body {
 }
 
 .chip {
-	border-color: hsl(calc((var(--bg-hue) - 28) * 1deg) 82% 31% / 0.4);
-	background-color: hsl(calc((var(--bg-hue) - 25) * 1deg) 64% 24% / 0.6);
-	color: hsl(calc((var(--bg-hue) - 35) * 1deg) 93% 82%);
+	border-color: hsl(calc((var(--bg-hue) - 28) * 1deg) 85% 60% / 0.45);
+	background-color: hsl(calc((var(--bg-hue) - 25) * 1deg) 64% 24% / 0.55);
+	background-image: linear-gradient(
+		to bottom,
+		hsl(calc((var(--bg-hue) - 22) * 1deg) 70% 34% / 0.5),
+		hsl(calc((var(--bg-hue) - 28) * 1deg) 68% 16% / 0.5)
+	);
+	color: hsl(calc((var(--bg-hue) - 35) * 1deg) 95% 86%);
+	backdrop-filter: blur(4px);
+	box-shadow:
+		0 1px 8px hsl(calc((var(--bg-hue) - 28) * 1deg) 80% 45% / 0.18),
+		inset 0 1px 0 hsl(calc((var(--bg-hue) - 18) * 1deg) 95% 82% / 0.18);
+	transition:
+		transform 0.15s ease,
+		box-shadow 0.2s ease,
+		color 0.2s ease,
+		border-color 0.2s ease;
 }
 
 .chip:hover {
-	background-color: hsl(calc((var(--bg-hue) - 27) * 1deg) 70% 27% / 0.7);
+	color: hsl(calc((var(--bg-hue) - 35) * 1deg) 100% 93%);
+	border-color: hsl(calc((var(--bg-hue) - 28) * 1deg) 92% 68% / 0.7);
+	transform: translateY(-2px);
+	box-shadow:
+		0 4px 16px hsl(calc((var(--bg-hue) - 28) * 1deg) 88% 52% / 0.4),
+		inset 0 1px 0 hsl(calc((var(--bg-hue) - 18) * 1deg) 98% 86% / 0.28);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.chip {
+		transition: none;
+	}
+	.chip:hover {
+		transform: none;
+	}
 }
 
 @media (prefers-reduced-motion: reduce) {

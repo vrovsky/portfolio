@@ -13,7 +13,8 @@
 	<h4 class="text-xl font-bold md:text-xl lg:text-2xl">{project.name}</h4>
 	<div class="flex flex-wrap content-start gap-2">
 		{#each project.tech as tech (tech)}
-			<span class="chip rounded-sm border px-2 py-1 text-xs md:px-2 md:text-xs lg:px-3 lg:text-sm"
+			<span
+				class="chip rounded-full border px-3 py-1 text-xs font-medium whitespace-nowrap md:px-3 md:text-xs lg:px-3.5 lg:text-sm"
 				>{tech}</span
 			>
 		{/each}

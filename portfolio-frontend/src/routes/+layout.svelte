@@ -36,34 +36,39 @@
 </svelte:head>
 
 <header
-	class="sticky top-0 z-10 flex items-center justify-between bg-gray-800/50 p-4 text-white backdrop-blur-md"
+	class="sticky top-0 z-10 flex items-center justify-between gap-3 bg-gray-800/50 p-4 text-white backdrop-blur-md"
 >
-	<nav class="flex items-center space-x-4">
+	<nav class="flex items-center gap-2 sm:gap-3">
 		<a
 			target="_blank"
+			rel="noopener"
 			href="https://github.com/vrovsky"
 			aria-label="GitHub"
-			class="transition-colors hover:text-primary"><i class="fab fa-github"></i></a
+			class="icon-btn"><i class="fab fa-github"></i></a
 		>
 		<a
 			target="_blank"
+			rel="noopener"
 			href="https://www.linkedin.com/in/viachaslau-rouski-58840521a/"
 			aria-label="LinkedIn"
-			class="transition-colors hover:text-primary"><i class="fab fa-linkedin"></i></a
+			class="icon-btn"><i class="fab fa-linkedin-in"></i></a
 		>
 		<a
 			target="_blank"
+			rel="noopener"
 			href="https://t.me/rovskyv"
 			aria-label="Telegram"
-			class="transition-colors hover:text-primary"><i class="fab fa-telegram"></i></a
+			class="icon-btn"><i class="fab fa-telegram-plane"></i></a
 		>
-		<a
-			target="_blank"
-			href="mailto:vrovsky@gmail.com"
-			aria-label="Email"
-			class="rotate-90 transition-colors hover:text-primary"><i class="fab fa-envelope"></i></a
+		<a href="mailto:vrovsky@gmail.com" aria-label="Email" class="icon-btn"
+			><i class="fas fa-envelope"></i></a
 		>
 	</nav>
+	<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+	<a href="/viachaslau_rouski_fs_cv.pdf" download aria-label="Download CV (PDF)" class="cv-btn">
+		<i class="fas fa-file-pdf"></i>
+		<span>Download CV</span>
+	</a>
 </header>
 
 <main>

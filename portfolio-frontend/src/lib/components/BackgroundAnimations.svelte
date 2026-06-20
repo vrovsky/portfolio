@@ -18,6 +18,7 @@
 	let lineCount = 0;
 	let mouseX = 0;
 	let mouseY = 0;
+	let lastWidth = 0;
 
 	const PARTICLE_COUNT = 2000;
 
@@ -62,8 +63,11 @@
 		camera.position.z = 50;
 
 		renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-		renderer.setSize(width, height);
+		// updateStyle=false: let CSS size the canvas (100% of the fixed container) so the
+		// drawing buffer is independent of the element's display size.
+		renderer.setSize(width, height, false);
 		renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+		lastWidth = width;
 		// eslint-disable-next-line svelte/no-dom-manipulating
 		container.appendChild(renderer.domElement);
 
@@ -222,11 +226,16 @@
 
 	function onResize() {
 		const width = window.innerWidth;
-		const height = window.innerHeight;
+		// Mobile browsers fire `resize` when the address bar shows/hides on scroll,
+		// changing only the height. Ignore those so the scene doesn't jump while scrolling;
+		// only react to real width changes (orientation change, window resize).
+		if (width === lastWidth) return;
+		lastWidth = width;
 
+		const height = window.innerHeight;
 		camera.aspect = width / height;
 		camera.updateProjectionMatrix();
-		renderer.setSize(width, height);
+		renderer.setSize(width, height, false);
 	}
 </script>
 
@@ -246,5 +255,7 @@
 
 	.background-canvas :global(canvas) {
 		display: block;
+		width: 100%;
+		height: 100%;
 	}
 </style>

@@ -66,7 +66,7 @@
 
 	<div use:inview class="flex flex-col from-primary/20 to-accent/20 pt-12 lg:flex-1 lg:pt-20">
 		<section in:fade={{ duration: 800 }}>
-			<h2 class="mb-8 text-center text-2xl font-bold sm:text-3xl lg:text-end lg:text-4xl">
+			<h2 class="mb-8 text-center text-2xl font-bold sm:text-3xl lg:text-start lg:text-4xl">
 				Skills
 			</h2>
 			<div class="flex flex-col gap-4 lg:gap-6">

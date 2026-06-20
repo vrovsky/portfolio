@@ -73,22 +73,23 @@
 				<div class="info-card rounded-sm p-6 shadow-md">
 					<h3 class="mb-4 text-2xl">Tech Stack</h3>
 					<p>
-						Rust | TypeScript | Solidity | Next.js | Node.js | React | SvelteKit <br /> TailwindCSS
-						| Three.js | GSAP | PostgreSQL <br /> AWS | Docker | Grafana | Cypress | Selenium | Gherkin
-						| Axum
+						Rust | TypeScript | Solidity | Next.js | Node.js | React | SvelteKit | TailwindCSS |
+						Three.js | GSAP | PostgreSQL | AWS | Docker | Grafana | Cypress | Selenium | Gherkin |
+						Axum
 					</p>
 				</div>
 				<div class="info-card rounded-sm p-6 shadow-md">
 					<h3 class="mb-4 text-2xl">AI & LLM</h3>
 					<p>
-						OpenAI API | Claude / Anthropic API | LLM Integration | RAG <br /> Vector Databases |
-						Hugging Face Transformers | AI Agents <br /> Prompt Engineering | LangChain | AI-Powered Apps
+						OpenAI API | Claude / Anthropic API | LLM Integration | RAG | Vector Databases | Hugging
+						Face Transformers | AI Agents | Prompt Engineering | LangChain | AI-Powered Apps
 					</p>
 				</div>
 				<div class="info-card rounded-sm p-6 shadow-md">
 					<h3 class="mb-4 text-2xl">Leadership & Soft Skills</h3>
 					<p>
-						Team Leadership | Mentorship | Cross-functional Collaboration <br /> Engineering Process Improvement
+						Team Leadership | Mentorship | Cross-functional Collaboration | Engineering Process
+						Improvement
 					</p>
 				</div>
 				<div class="info-card rounded-sm p-6 shadow-md">
@@ -102,8 +103,8 @@
 				<div class="info-card rounded-sm p-6 shadow-md">
 					<h3 class="mb-4 text-2xl">Languages</h3>
 					<p>
-						English — Fluent <br /> Belarusian, Russian — Native <br /> Spanish, French — Intermediate
-						| Portuguese — Basic
+						English — Fluent | Belarusian, Russian — Native | Spanish, French — Intermediate |
+						Portuguese — Basic
 					</p>
 				</div>
 			</div>

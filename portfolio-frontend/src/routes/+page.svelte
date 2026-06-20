@@ -31,7 +31,7 @@
 			<p class="text-xl md:text-xl lg:text-2xl">Senior Full-Stack Engineer & Team Lead</p>
 			<p class="mb-8 text-xl md:text-xl lg:text-2xl">Rust & TypeScript</p>
 			<p class="md:text-md mb-8 max-w-2xl text-base text-pretty lg:text-lg lg:text-balance">
-				Building high-performance apps with a focus on AI, blockchain, and financial tech.
+				Turning complex blockchain, AI, and fintech problems into production-grade products.
 			</p>
 			<div class="mb-8 hidden space-x-4 backdrop-blur-sm transition-all lg:flex">
 				<a

@@ -11,14 +11,10 @@
 	class="info-card flex flex-col gap-4 rounded-sm p-6 opacity-80 shadow-md hover:opacity-100 md:row-span-4 md:grid md:grid-rows-subgrid"
 >
 	<h4 class="text-xl font-bold md:text-xl lg:text-2xl">{project.name}</h4>
-	<div class="flex flex-wrap content-start gap-2">
-		{#each project.tech as tech (tech)}
-			<span
-				class="chip rounded-full border px-3 py-1 text-xs font-medium whitespace-nowrap md:px-3 md:text-xs lg:px-3.5 lg:text-sm"
-				>{tech}</span
-			>
-		{/each}
-	</div>
+	<p class="text-sm leading-relaxed lg:text-base">
+		<span class="font-semibold text-primary">Stack:</span>
+		<span class="text-cyan-100/90">{project.tech.join(' · ')}</span>
+	</p>
 	<p class="whitespace-pre-line">
 		{project.description}
 	</p>

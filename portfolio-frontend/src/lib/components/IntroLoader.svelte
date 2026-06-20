@@ -286,7 +286,7 @@
 		padding: 0.7rem 1.4rem;
 		background-color: hsl(199 89% 48% / 0.15);
 		border: 1px solid hsl(199 89% 60% / 0.55);
-		border-radius: 9999px;
+		clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
 		cursor: pointer;
 		transition:
 			transform 0.18s ease,

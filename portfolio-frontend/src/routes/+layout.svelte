@@ -3,10 +3,12 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import MouseTrail from '$lib/components/MouseTrail.svelte';
 	import BackgroundAnimations from '$lib/components/BackgroundAnimations.svelte';
+	import IntroLoader from '$lib/components/IntroLoader.svelte';
 
 	let { children } = $props();
 </script>
 
+<IntroLoader />
 <BackgroundAnimations />
 <MouseTrail />
 

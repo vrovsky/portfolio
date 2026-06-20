@@ -78,7 +78,7 @@
 		"category": "pet"
 	},
 	{
-		"name": "Lightweight Live Wallpaper for Windows",
+		"name": "Lightweight Live Wallpaper",
 		"description": "Lightweight Rust-powered desktop video wallpaper engine.",
 		"github": "https://github.com/vrovsky/r_wp",
 		"tech": ["Rust", "Windows Core", "Raw Window Handle"],

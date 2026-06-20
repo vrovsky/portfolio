@@ -22,14 +22,15 @@
 		width: clamp(15rem, 72vw, 26rem);
 		aspect-ratio: 1009 / 1792;
 		margin: 0;
-		border-radius: 0.5rem;
 		overflow: hidden;
 		background: #05060a;
-		/* Neon frame glow, hue-synced to the drifting spectrum theme. */
-		box-shadow:
-			0 0 0 1px hsl(calc((var(--bg-hue, 221) - 22) * 1deg) 90% 60% / 0.7),
-			0 0 22px hsl(calc((var(--bg-hue, 221) - 22) * 1deg) 90% 55% / 0.35),
-			0 0 60px hsl(calc((var(--bg-hue, 221) + 60) * 1deg) 90% 55% / 0.2);
+		/* Angular cut corners, matching the panels/buttons. */
+		clip-path: var(--panel-cut);
+		border: 1px solid hsl(calc((var(--bg-hue, 221) - 22) * 1deg) 90% 62% / 0.7);
+		/* Neon glow via drop-shadow so it follows the angular silhouette
+		   (a box-shadow would be clipped by clip-path). */
+		filter: drop-shadow(0 0 18px hsl(calc((var(--bg-hue, 221) - 22) * 1deg) 90% 55% / 0.32))
+			drop-shadow(0 0 46px hsl(calc((var(--bg-hue, 221) + 60) * 1deg) 90% 55% / 0.18));
 	}
 
 	/* Fill mode: on large screens, stop dictating height via the portrait ratio.
@@ -121,7 +122,6 @@
 	.glitch__frame {
 		position: absolute;
 		inset: 0;
-		border-radius: 0.5rem;
 		box-shadow: inset 0 0 0 1px hsl(calc((var(--bg-hue, 221) - 22) * 1deg) 100% 70% / 0.5);
 		pointer-events: none;
 		animation: glitch-flicker 5s steps(1) infinite;

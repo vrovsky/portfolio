@@ -13,8 +13,16 @@
 }
 
 :root {
-	/* Angular "cut corner" shape shared by all buttons (top-right + bottom-left) */
+	/* Angular "cut corner" shapes shared across the UI (top-right + bottom-left) */
 	--btn-cut: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+	--panel-cut: polygon(
+		0 0,
+		calc(100% - 16px) 0,
+		100% 16px,
+		100% 100%,
+		16px 100%,
+		0 calc(100% - 16px)
+	);
 }
 
 .btn-cut {
@@ -73,6 +81,8 @@ body {
 		hsl(calc((var(--bg-hue) + 5) * 1deg) 57% 21% / 0.4),
 		hsl(calc((var(--bg-hue) - 24) * 1deg) 79% 15% / 0.3)
 	);
+	clip-path: var(--panel-cut);
+	border: 1px solid hsl(calc((var(--bg-hue) - 24) * 1deg) 75% 60% / 0.22);
 }
 
 .info-card:hover {

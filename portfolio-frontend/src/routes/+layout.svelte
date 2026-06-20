@@ -77,10 +77,34 @@
 	{@render children()}
 </main>
 
-<footer class="bg-gray-800/50 p-4 text-start text-white backdrop-blur-md">
-	<p>
-		<a href="https://www.linkedin.com/in/viachaslau-rouski-58840521a/" class="hover:text-primary"
-			>Vi Rovsky</a
-		>, 2026
-	</p>
+<footer class="site-footer">
+	<div class="site-footer__inner">
+		<p class="site-footer__id">
+			<span class="site-footer__prompt">&gt;</span>
+			<a
+				target="_blank"
+				rel="noopener"
+				href="https://www.linkedin.com/in/viachaslau-rouski-58840521a/"
+				class="site-footer__name">Vi Rovsky</a
+			>
+			<span class="site-footer__year">© 2026</span>
+			<span class="site-footer__cursor" aria-hidden="true">_</span>
+		</p>
+		<p class="site-footer__meta">Built with SvelteKit · Rust · Three.js</p>
+		<nav class="site-footer__links" aria-label="Social links">
+			<a target="_blank" rel="noopener" href="https://github.com/vrovsky" aria-label="GitHub"
+				><i class="fab fa-github"></i></a
+			>
+			<a
+				target="_blank"
+				rel="noopener"
+				href="https://www.linkedin.com/in/viachaslau-rouski-58840521a/"
+				aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a
+			>
+			<a target="_blank" rel="noopener" href="https://t.me/rovskyv" aria-label="Telegram"
+				><i class="fab fa-telegram-plane"></i></a
+			>
+			<a href="mailto:vrovsky@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+		</nav>
+	</div>
 </footer>

@@ -170,3 +170,120 @@ a[class*='px-'][class*='py-'] {
 		transform: none;
 	}
 }
+
+/* ---- Footer ---- */
+.site-footer {
+	position: relative;
+	margin-top: 2rem;
+	padding: 1.25rem 1rem;
+	background-color: hsl(221 40% 8% / 0.6);
+	backdrop-filter: blur(8px);
+	overflow: hidden;
+}
+
+/* Neon top divider */
+.site-footer::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background: linear-gradient(
+		90deg,
+		transparent,
+		hsl(199 89% 55% / 0.9) 30%,
+		hsl(266 75% 62% / 0.9) 70%,
+		transparent
+	);
+	box-shadow: 0 0 14px hsl(199 89% 55% / 0.45);
+}
+
+.site-footer__inner {
+	max-width: 1600px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.6rem 1.5rem;
+	font-family: 'Courier New', ui-monospace, monospace;
+}
+
+.site-footer__id {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.45rem;
+	font-size: 0.95rem;
+	color: #cbd5e1;
+}
+
+.site-footer__prompt {
+	color: #5eead4;
+}
+
+.site-footer__name {
+	color: #67e8f9;
+	text-shadow: 0 0 10px hsl(199 89% 55% / 0.4);
+	transition:
+		color 0.2s ease,
+		text-shadow 0.2s ease;
+}
+
+.site-footer__name:hover {
+	color: #a5f3fc;
+	text-shadow: 0 0 16px hsl(199 89% 60% / 0.7);
+}
+
+.site-footer__year {
+	color: hsl(0 0% 100% / 0.55);
+}
+
+.site-footer__cursor {
+	color: #5eead4;
+	animation: footer-blink 1.1s steps(1) infinite;
+}
+
+.site-footer__meta {
+	font-size: 0.78rem;
+	letter-spacing: 0.04em;
+	color: hsl(0 0% 100% / 0.45);
+}
+
+.site-footer__links {
+	display: inline-flex;
+	gap: 1rem;
+	font-size: 1.05rem;
+}
+
+.site-footer__links a {
+	color: hsl(0 0% 100% / 0.6);
+	transition:
+		color 0.2s ease,
+		transform 0.2s ease;
+}
+
+.site-footer__links a:hover {
+	color: var(--color-primary);
+	transform: translateY(-2px);
+}
+
+@keyframes footer-blink {
+	0%,
+	49% {
+		opacity: 1;
+	}
+	50%,
+	100% {
+		opacity: 0;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.site-footer__cursor {
+		animation: none;
+	}
+	.site-footer__links a:hover {
+		transform: none;
+	}
+}

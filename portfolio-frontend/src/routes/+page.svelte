@@ -37,24 +37,24 @@
 				<a
 					target="_blank"
 					href="https://github.com/vrovsky"
-					class="rounded-sm bg-violet-600 px-5 py-2 opacity-80 backdrop-blur-sm hover:bg-violet-500 hover:opacity-90"
+					class="btn-cut bg-violet-600 px-5 py-2 opacity-80 backdrop-blur-sm hover:bg-violet-500 hover:opacity-90"
 					>GitHub</a
 				>
 				<a
 					target="_blank"
 					href="https://www.linkedin.com/in/viachaslau-rouski-58840521a/"
-					class="rounded-sm bg-cyan-700 px-5 py-2 opacity-80 backdrop-blur-sm hover:bg-cyan-600 hover:opacity-90"
+					class="btn-cut bg-cyan-700 px-5 py-2 opacity-80 backdrop-blur-sm hover:bg-cyan-600 hover:opacity-90"
 					>LinkedIn</a
 				>
 				<a
 					href="mailto:vrovsky@gmail.com"
-					class="rounded-sm bg-sky-700 px-5 py-2 opacity-80 backdrop-blur-sm hover:bg-sky-600 hover:opacity-90"
+					class="btn-cut bg-sky-700 px-5 py-2 opacity-80 backdrop-blur-sm hover:bg-sky-600 hover:opacity-90"
 					>Email</a
 				>
 				<a
 					target="_blank"
 					href="https://t.me/rovskyv"
-					class="rounded-sm bg-blue-700 px-5 py-2 opacity-80 backdrop-blur-sm hover:bg-blue-600 hover:opacity-90"
+					class="btn-cut bg-blue-700 px-5 py-2 opacity-80 backdrop-blur-sm hover:bg-blue-600 hover:opacity-90"
 					>Telegram</a
 				>
 			</div>

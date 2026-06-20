@@ -12,6 +12,15 @@
 	initial-value: 221;
 }
 
+:root {
+	/* Angular "cut corner" shape shared by all buttons (top-right + bottom-left) */
+	--btn-cut: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+}
+
+.btn-cut {
+	clip-path: var(--btn-cut);
+}
+
 body {
 	font-family: 'Exo 2', sans-serif;
 	animation: spectrum-drift 120s linear infinite;
@@ -70,44 +79,6 @@ body {
 	background-color: hsl(calc((var(--bg-hue) + 42) * 1deg) 67% 35% / 0.4);
 }
 
-.chip {
-	border-color: hsl(calc((var(--bg-hue) - 28) * 1deg) 85% 60% / 0.45);
-	background-color: hsl(calc((var(--bg-hue) - 25) * 1deg) 64% 24% / 0.55);
-	background-image: linear-gradient(
-		to bottom,
-		hsl(calc((var(--bg-hue) - 22) * 1deg) 70% 34% / 0.5),
-		hsl(calc((var(--bg-hue) - 28) * 1deg) 68% 16% / 0.5)
-	);
-	color: hsl(calc((var(--bg-hue) - 35) * 1deg) 95% 86%);
-	backdrop-filter: blur(4px);
-	box-shadow:
-		0 1px 8px hsl(calc((var(--bg-hue) - 28) * 1deg) 80% 45% / 0.18),
-		inset 0 1px 0 hsl(calc((var(--bg-hue) - 18) * 1deg) 95% 82% / 0.18);
-	transition:
-		transform 0.15s ease,
-		box-shadow 0.2s ease,
-		color 0.2s ease,
-		border-color 0.2s ease;
-}
-
-.chip:hover {
-	color: hsl(calc((var(--bg-hue) - 35) * 1deg) 100% 93%);
-	border-color: hsl(calc((var(--bg-hue) - 28) * 1deg) 92% 68% / 0.7);
-	transform: translateY(-2px);
-	box-shadow:
-		0 4px 16px hsl(calc((var(--bg-hue) - 28) * 1deg) 88% 52% / 0.4),
-		inset 0 1px 0 hsl(calc((var(--bg-hue) - 18) * 1deg) 98% 86% / 0.28);
-}
-
-@media (prefers-reduced-motion: reduce) {
-	.chip {
-		transition: none;
-	}
-	.chip:hover {
-		transform: none;
-	}
-}
-
 @media (prefers-reduced-motion: reduce) {
 	body {
 		animation: none;
@@ -121,8 +92,7 @@ button,
 }
 
 /* Apply font to all links that look like buttons */
-a[class*='px-'][class*='py-'],
-a.rounded-full {
+a[class*='px-'][class*='py-'] {
 	font-family: 'Exo 2', sans-serif;
 }
 
@@ -133,7 +103,7 @@ a.rounded-full {
 	width: 2.25rem;
 	align-items: center;
 	justify-content: center;
-	border-radius: 9999px;
+	clip-path: var(--btn-cut);
 	border: 1px solid rgb(255 255 255 / 0.15);
 	background-color: rgb(255 255 255 / 0.05);
 	color: rgb(255 255 255 / 0.82);
@@ -159,7 +129,7 @@ a.rounded-full {
 	display: inline-flex;
 	align-items: center;
 	gap: 0.5rem;
-	border-radius: 9999px;
+	clip-path: var(--btn-cut);
 	border: 1px solid color-mix(in srgb, var(--color-primary) 50%, transparent);
 	background-color: color-mix(in srgb, var(--color-primary) 15%, transparent);
 	padding: 0.5rem 0.9rem;

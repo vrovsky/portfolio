@@ -4,7 +4,7 @@
 	let { project }: { project: Project } = $props();
 </script>
 
-<!-- 4 direct children (title / chips / description / links) map to 4 subgrid rows
+<!-- 4 direct children (title / stack / description / links) map to 4 subgrid rows
      so every band aligns across the cards in a row with no reserved dead space.
      Falls back to a simple flex column below the md grid. -->
 <div

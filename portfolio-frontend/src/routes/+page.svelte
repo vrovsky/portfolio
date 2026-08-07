@@ -93,10 +93,6 @@
 					</p>
 				</div>
 				<div class="info-card rounded-sm p-6 shadow-md">
-					<h3 class="mb-4 text-2xl">Methodologies</h3>
-					<p>Agile | Scrum | Kanban</p>
-				</div>
-				<div class="info-card rounded-sm p-6 shadow-md">
 					<h3 class="mb-4 text-2xl">Tools</h3>
 					<p>JIRA | Trello | Miro | Notion | ClickUp</p>
 				</div>

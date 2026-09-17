@@ -5,7 +5,7 @@
 
 	let mouse = $state({ x: 0, y: 0 });
 	let lastTrailTime = 0;
-	const TRAIL_THROTTLE_MS = 50; // Throttle to create trail every 50ms
+	const TRAIL_THROTTLE_MS = 16; // Throttle to create trail every ~16ms (~60fps)
 
 	onMount(() => {
 		if (!browser) return;
@@ -32,11 +32,11 @@
 	function createTrail() {
 		const trail = document.createElement('div');
 		trail.classList.add(
-			'trail',
-			'fixed',
-			'w-12',
-			'h-12',
-			'rounded-sm',
+'trail',
+		'fixed',
+		'w-6',
+		'h-6',
+		'rounded-sm',
 			'pointer-events-none',
 			'mix-blend-screen',
 			'will-change-transform-opacity',

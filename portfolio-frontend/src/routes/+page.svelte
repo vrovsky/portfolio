@@ -71,37 +71,37 @@
 			</h2>
 			<div class="flex flex-col gap-4 lg:gap-6">
 				<div class="info-card rounded-sm p-6 shadow-md">
-					<h3 class="mb-4 text-2xl">Tech Stack</h3>
+					<h3 class="mb-4 text-2xl">Languages</h3>
+					<p>Rust | TypeScript | JavaScript | Solidity | Python | FunC</p>
+				</div>
+				<div class="info-card rounded-sm p-6 shadow-md">
+					<h3 class="mb-4 text-2xl">Frontend</h3>
 					<p>
-						Rust | TypeScript | Solidity | Next.js | Node.js | React | SvelteKit | TailwindCSS |
-						Three.js | GSAP | PostgreSQL | AWS | Docker | Grafana | Cypress | Selenium | Gherkin |
-						Axum
+						React 19+ | Next.js | SvelteKit | Vite | Tailwind CSS | TanStack Query | Zustand |
+						Real-time UI | Performance Optimization | Three.js | GSAP
+					</p>
+				</div>
+				<div class="info-card rounded-sm p-6 shadow-md">
+					<h3 class="mb-4 text-2xl">Backend & Blockchain</h3>
+					<p>
+						Node.js | Axum (Rust) | REST APIs | GraphQL | Microservices | Solana | TON | NEAR |
+						Ethereum | ethers v6 | Smart Contracts | PostgreSQL | MySQL | Drizzle ORM | Neon
 					</p>
 				</div>
 				<div class="info-card rounded-sm p-6 shadow-md">
 					<h3 class="mb-4 text-2xl">AI & LLM</h3>
 					<p>
-						OpenAI API | Claude / Anthropic API | LLM Integration | RAG | Vector Databases | Hugging
-						Face Transformers | AI Agents | Prompt Engineering | LangChain | AI-Powered Apps
+						OpenAI & Claude APIs | LLM Integration | RAG | Vector Databases | Hugging Face
+						Transformers | AI Agents | Prompt Engineering
 					</p>
+				</div>
+				<div class="info-card rounded-sm p-6 shadow-md">
+					<h3 class="mb-4 text-2xl">Architecture</h3>
+					<p>Feature-Sliced Design | Monorepos (pnpm) | Modular SDK / Transport Layers</p>
 				</div>
 				<div class="info-card rounded-sm p-6 shadow-md">
 					<h3 class="mb-4 text-2xl">Leadership & Soft Skills</h3>
-					<p>
-						Team Leadership | Mentorship | Cross-functional Collaboration | Engineering Process
-						Improvement
-					</p>
-				</div>
-				<div class="info-card rounded-sm p-6 shadow-md">
-					<h3 class="mb-4 text-2xl">Tools</h3>
-					<p>JIRA | Trello | Miro | Notion | ClickUp</p>
-				</div>
-				<div class="info-card rounded-sm p-6 shadow-md">
-					<h3 class="mb-4 text-2xl">Languages</h3>
-					<p>
-						English — Fluent | Belarusian, Russian — Native | Spanish, French — Intermediate |
-						Portuguese — Basic
-					</p>
+					<p>Team Leadership | Mentorship | Cross-functional Collaboration | Engineering Process Improvement</p>
 				</div>
 			</div>
 		</section>

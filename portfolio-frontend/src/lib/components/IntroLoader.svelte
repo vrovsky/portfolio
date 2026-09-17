@@ -9,7 +9,13 @@
 	const NAME = 'VIACHASLAU ROUSKI';
 	const GLYPHS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#%&*<>/\\=+';
 	const STATUSES = ['INITIALIZING', 'DECRYPTING PROFILE', 'LOADING MODULES', 'ESTABLISHING UPLINK'];
-	const DURATION = 1600;
+	const BASE_DURATION = 1600;
+	const SPEED_MULTIPLIER = 4;
+	const DURATION = BASE_DURATION / SPEED_MULTIPLIER;
+	const GLYPH_INTERVAL = 50 / SPEED_MULTIPLIER;
+	const STATUS_INTERVAL = 400 / SPEED_MULTIPLIER;
+	const PROGRESS_INTERVAL = 30 / SPEED_MULTIPLIER;
+	const MODAL_DELAY = (BASE_DURATION + 200) / SPEED_MULTIPLIER;
 
 	let display = $state(NAME);
 	let progress = $state(0);
@@ -72,7 +78,7 @@
 				}
 				display = out;
 				if (revealCount >= NAME.length) display = NAME;
-			}, 50)
+			}, GLYPH_INTERVAL)
 		);
 
 		let s = 0;
@@ -80,14 +86,14 @@
 			setInterval(() => {
 				s = (s + 1) % STATUSES.length;
 				status = STATUSES[s];
-			}, 400)
+			}, STATUS_INTERVAL)
 		);
 
 		const start = performance.now();
 		intervals.push(
 			setInterval(() => {
 				progress = Math.min(100, Math.round(((performance.now() - start) / DURATION) * 100));
-			}, 30)
+			}, PROGRESS_INTERVAL)
 		);
 
 		timers.push(
@@ -95,7 +101,7 @@
 				cleanup();
 				progress = 100;
 				phase = 'modal';
-			}, DURATION + 200)
+			}, MODAL_DELAY)
 		);
 
 		return cleanup;
